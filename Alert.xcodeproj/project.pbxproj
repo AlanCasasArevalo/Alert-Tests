@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50699D84CDDFF3735280C6EE /* Pods_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB893147CA2683F51CBCE1E /* Pods_Alert.framework */; };
+		B1444B1E5A77F581FA36A76C /* Pods_AlertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702CBAB78C80BE053C5B41D8 /* Pods_AlertTests.framework */; };
 		F634AD992947500900CA36E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634AD982947500900CA36E1 /* AppDelegate.swift */; };
 		F634AD9B2947500900CA36E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634AD9A2947500900CA36E1 /* SceneDelegate.swift */; };
 		F634AD9D2947500900CA36E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634AD9C2947500900CA36E1 /* ViewController.swift */; };
@@ -28,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4889B45D7A61374E6174AFD2 /* Pods-AlertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTests.debug.xcconfig"; path = "Target Support Files/Pods-AlertTests/Pods-AlertTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5FB893147CA2683F51CBCE1E /* Pods_Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB57C03EEC833F3015BA5B1 /* Pods-Alert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.debug.xcconfig"; path = "Target Support Files/Pods-Alert/Pods-Alert.debug.xcconfig"; sourceTree = "<group>"; };
+		702CBAB78C80BE053C5B41D8 /* Pods_AlertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B052C62745054A25D62737 /* Pods-Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.release.xcconfig"; path = "Target Support Files/Pods-Alert/Pods-Alert.release.xcconfig"; sourceTree = "<group>"; };
+		9FB748D3EF75EBFB55D3C773 /* Pods-AlertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertTests.release.xcconfig"; path = "Target Support Files/Pods-AlertTests/Pods-AlertTests.release.xcconfig"; sourceTree = "<group>"; };
 		F634AD952947500900CA36E1 /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F634AD982947500900CA36E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F634AD9A2947500900CA36E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50699D84CDDFF3735280C6EE /* Pods_Alert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,18 +62,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1444B1E5A77F581FA36A76C /* Pods_AlertTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06720DE6509D729688E1D060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB893147CA2683F51CBCE1E /* Pods_Alert.framework */,
+				702CBAB78C80BE053C5B41D8 /* Pods_AlertTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40C8F958D7D4F4120BA0DD38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AB57C03EEC833F3015BA5B1 /* Pods-Alert.debug.xcconfig */,
+				88B052C62745054A25D62737 /* Pods-Alert.release.xcconfig */,
+				4889B45D7A61374E6174AFD2 /* Pods-AlertTests.debug.xcconfig */,
+				9FB748D3EF75EBFB55D3C773 /* Pods-AlertTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F634AD8C2947500900CA36E1 = {
 			isa = PBXGroup;
 			children = (
 				F634AD972947500900CA36E1 /* Alert */,
 				F634ADB12947502000CA36E1 /* AlertTests */,
 				F634AD962947500900CA36E1 /* Products */,
+				40C8F958D7D4F4120BA0DD38 /* Pods */,
+				06720DE6509D729688E1D060 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +112,7 @@
 		F634AD972947500900CA36E1 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				F634ADC329475D9C00CA36E1 /* New Group */,
 				F634ADBA2947509100CA36E1 /* Initial */,
 				F634ADB92947506300CA36E1 /* Views */,
 				F634ADA12947500B00CA36E1 /* Assets.xcassets */,
@@ -124,6 +157,13 @@
 			path = Initial;
 			sourceTree = "<group>";
 		};
+		F634ADC329475D9C00CA36E1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F634ADA92947500B00CA36E1 /* Build configuration list for PBXNativeTarget "Alert" */;
 			buildPhases = (
+				370A644BB156AB9E36EE5D75 /* [CP] Check Pods Manifest.lock */,
 				F634AD912947500900CA36E1 /* Sources */,
 				F634AD922947500900CA36E1 /* Frameworks */,
 				F634AD932947500900CA36E1 /* Resources */,
@@ -148,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F634ADB62947502100CA36E1 /* Build configuration list for PBXNativeTarget "AlertTests" */;
 			buildPhases = (
+				3FA1B79F057D3EFB77CC0C62 /* [CP] Check Pods Manifest.lock */,
 				F634ADAC2947502000CA36E1 /* Sources */,
 				F634ADAD2947502000CA36E1 /* Frameworks */,
 				F634ADAE2947502000CA36E1 /* Resources */,
+				5FEC73943FF934B8B30ADE2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +263,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		370A644BB156AB9E36EE5D75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA1B79F057D3EFB77CC0C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlertTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FEC73943FF934B8B30ADE2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlertTests/Pods-AlertTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlertTests/Pods-AlertTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlertTests/Pods-AlertTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F634AD912947500900CA36E1 /* Sources */ = {
@@ -387,6 +494,7 @@
 		};
 		F634ADAA2947500B00CA36E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB57C03EEC833F3015BA5B1 /* Pods-Alert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -415,6 +523,7 @@
 		};
 		F634ADAB2947500B00CA36E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B052C62745054A25D62737 /* Pods-Alert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,6 +552,7 @@
 		};
 		F634ADB72947502100CA36E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4889B45D7A61374E6174AFD2 /* Pods-AlertTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -469,6 +579,7 @@
 		};
 		F634ADB82947502100CA36E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB748D3EF75EBFB55D3C773 /* Pods-AlertTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
