@@ -16,6 +16,15 @@ final class ViewControllerTests: XCTestCase {
         
         XCTAssertEqual(alertVerifier.preferredAction?.title, "OK", "preferred action")
     }
+    
+    func test_executeAlertAction_withOKButton() throws {
+        let (sut, alertVerifier) = makeSUT()
+    
+        tap(sut.button)
+
+        try alertVerifier.executeAction(forButton: "OK")
+    }
+    
 }
 
 extension ViewControllerTests {
