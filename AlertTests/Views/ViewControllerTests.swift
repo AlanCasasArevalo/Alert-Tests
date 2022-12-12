@@ -3,27 +3,10 @@ import XCTest
 import ViewControllerPresentationSpy
 
 final class ViewControllerTests: XCTestCase {
-    
-    private var alertVerifier: AlertVerifier!
-    
-    
-    override func setUp() {
-        super.setUp()
-        alertVerifier = AlertVerifier()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-        alertVerifier = nil
-    }
         
     func test_tappingButton_shouldShowAlert() {
+        let (sut, alertVerifier) = makeSUT()
     
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let sut: ViewController = storyboard.instantiateViewController(identifier: String(describing: ViewController.self))
-        
-        sut.loadViewIfNeeded()
-
         tap(sut.button)
         
         alertVerifier.verify(title: "Do the thing?", message: "Let us know if you want to do the thing.", animated: true, actions: [
@@ -32,5 +15,18 @@ final class ViewControllerTests: XCTestCase {
         ], presentingViewController: sut)
         
         XCTAssertEqual(alertVerifier.preferredAction?.title, "OK", "preferred action")
+    }
+}
+
+extension ViewControllerTests {
+    // MARK: - Helpers
+    func makeSUT() -> (sut: ViewController, alertVerifier: AlertVerifier) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let sut: ViewController = storyboard.instantiateViewController(identifier: String(describing: ViewController.self))
+        let alertVerifier = AlertVerifier()
+
+        sut.loadViewIfNeeded()
+        
+        return (sut, alertVerifier)
     }
 }
