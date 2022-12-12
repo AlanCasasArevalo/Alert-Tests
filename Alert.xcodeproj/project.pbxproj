@@ -17,6 +17,8 @@
 		F634ADA52947500B00CA36E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F634ADA32947500B00CA36E1 /* LaunchScreen.storyboard */; };
 		F634ADBD294750A300CA36E1 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634ADBC294750A300CA36E1 /* TestingAppDelegate.swift */; };
 		F634ADBF294750B600CA36E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634ADBE294750B600CA36E1 /* main.swift */; };
+		F634ADC629475DD800CA36E1 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634ADC429475DCE00CA36E1 /* TestHelpers.swift */; };
+		F634ADC929475E1D00CA36E1 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634ADC829475E1D00CA36E1 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F634ADB02947502000CA36E1 /* AlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F634ADBC294750A300CA36E1 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		F634ADBE294750B600CA36E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F634ADC429475DCE00CA36E1 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		F634ADC829475E1D00CA36E1 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +116,6 @@
 		F634AD972947500900CA36E1 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				F634ADC329475D9C00CA36E1 /* New Group */,
 				F634ADBA2947509100CA36E1 /* Initial */,
 				F634ADB92947506300CA36E1 /* Views */,
 				F634ADA12947500B00CA36E1 /* Assets.xcassets */,
@@ -124,6 +127,8 @@
 		F634ADB12947502000CA36E1 /* AlertTests */ = {
 			isa = PBXGroup;
 			children = (
+				F634ADC729475E0E00CA36E1 /* Views */,
+				F634ADC329475D9C00CA36E1 /* Shared */,
 				F634ADBB2947509700CA36E1 /* Initial */,
 			);
 			path = AlertTests;
@@ -157,11 +162,20 @@
 			path = Initial;
 			sourceTree = "<group>";
 		};
-		F634ADC329475D9C00CA36E1 /* New Group */ = {
+		F634ADC329475D9C00CA36E1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F634ADC429475DCE00CA36E1 /* TestHelpers.swift */,
 			);
-			path = "New Group";
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F634ADC729475E0E00CA36E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F634ADC829475E1D00CA36E1 /* ViewControllerTests.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F634ADC929475E1D00CA36E1 /* ViewControllerTests.swift in Sources */,
 				F634ADBD294750A300CA36E1 /* TestingAppDelegate.swift in Sources */,
+				F634ADC629475DD800CA36E1 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
